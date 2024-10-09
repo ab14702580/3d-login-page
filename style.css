@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #050505;
+    position: relative;
+}
+.header{
+    position: relative;
+}
+.cube{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+    z-index: 1;
+}
+@keyframes animate{
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.cube div{
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+.cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#151515,#ff0000);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
+    z-index: 1;
+}
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(100px);
+    z-index: 1;
+}
+.top::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #ff0000;
+    transform: translateZ(-360px);
+    filter: blur(12px);
+    box-shadow: 0 0 120px #ff0000,
+    0 0 200px #ff0000,
+    0 0 300px #ff0000,
+    0 0 400px #ff0000;
+    z-index: 1;
+}
+.header1{
+    position: relative;
+    z-index: 1;
+}
+.container1{
+    position: absolute;
+    top: -260px;
+    left: 310px;
+    z-index: 1;
+}
+.cube1{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+    z-index: 1;
+}
+.cube1 div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+.cube1 div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#151515,#F700FF);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+    z-index: 1;
+}
+.top1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(75px);
+    z-index: 1;
+}
+.top1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: #F700FF;
+    transform: translateZ(-250px);
+    filter: blur(12px);
+    box-shadow: 0 0 120px #F700FF,
+    0 0 200px #F700FF,
+    0 0 300px #F700FF,
+    0 0 400px #F700FF;
+    z-index: 0;
+}
+.header2{
+    position: relative;
+    z-index: 1;
+}
+.container2{
+    position: absolute;
+    bottom: -200px;
+    right: 500px;
+    z-index: 1;
+}
+.cube2{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+    z-index: 1;
+}
+.cube2 div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+.cube2 div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#151515,#4100FF);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+    z-index: 1;
+}
+.top2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(75px);
+    z-index: 1;
+}
+.top2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: #4100FF;
+    transform: translateZ(-250px);
+    filter: blur(12px);
+    box-shadow: 0 0 120px #4100FF,
+    0 0 200px #4100FF,
+    0 0 300px #4100FF,
+    0 0 400px #4100FF;
+    z-index: 0;
+}
+.header3{
+    position: relative;
+    z-index: 1;
+}
+.container3{
+    position: absolute;
+    bottom: 200px;
+    right: 500px;
+    z-index: 1;
+}
+.cube3{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+    z-index: 1;
+}
+.cube3 div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+.cube3 div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#151515,#1eff00);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(37.5px);
+    z-index: 1;
+}
+.top3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(37.5px);
+    z-index: 1;
+}
+.top3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background: #1eff00;
+    transform: translateZ(-125px);
+    filter: blur(12px);
+    box-shadow: 0 0 120px #1eff00,
+    0 0 200px #1eff00,
+    0 0 300px #1eff00,
+    0 0 400px #1eff00;
+    z-index: 0;
+}
+
+.header4{
+    position: relative;
+    z-index: 1;
+}
+.container4{
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    z-index: 1;
+}
+.cube4{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+    z-index: 1;
+}
+.cube4 div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+.cube4 div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#151515,#F0FF03);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(37.5px);
+    z-index: 1;
+}
+.top4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(37.5px);
+    z-index: 1;
+}
+.top4::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background: #F0FF03;
+    transform: translateZ(-125px);
+    filter: blur(12px);
+    box-shadow: 0 0 120px #F0FF03,
+    0 0 200px #F0FF03,
+    0 0 300px #F0FF03,
+    0 0 400px #F0FF03;
+    z-index: 0;
+}
+.login-info{
+    width: 600px;
+    height: 550px;
+    border-radius: 30px;
+    margin-left: -450px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 123;
+    box-shadow: -15px 20px 35px rgba(100, 95, 95, 0.02);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255,255,255,0.08);
+}
+.login{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.login h1{
+    margin: 70px 0 50px 0;
+    color: #F99351;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+}
+.login .inputbox{
+    position: relative;
+    margin-top: 50px;
+}
+.login .inputbox input{
+    padding: 5px 10px;
+    position: relative;
+    font-size: 17px;
+    width: 220px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #099dff;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+}
+.inputbox span{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #8b7a7ad3;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.inputbox input:focus ~ span,
+.inputbox input:valid ~ span{
+    bottom: 31px;
+    font-size: 12px;
+    color: #000;
+    background: #099dff;
+    padding: 0 10px;
+    z-index: 23;
+}
+.inputtype{
+    position: relative;
+}
+.inputtype .inputcontent{
+    position: absolute;
+    top: 22px;
+}
+.content{
+    position: absolute;
+    top: 113px;
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.btn button{
+    width: 155px;
+    height: 50px;
+    background: transparent;
+    outline: none;
+    border: 3px solid #f99351;
+    border-radius: 10px;
+    font-size: 17px;
+    display: inline-block;
+    font-weight: bold;
+    color: #f99351;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+.btn button:hover{
+    background: #f99351;
+    color: #fff;
+}
